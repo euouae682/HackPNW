@@ -1,7 +1,10 @@
-<script setup></script>
+<script setup>
+import { store } from '../store.js'
+import Navbar from './Navbar.vue'
+</script>
 
 <template>
-  <main class="hero">
+  <main class="hero" :id=store.showNav>
     <section class="hero-text">
       <p class="">Earth Guardian</p>
       <p>
@@ -10,23 +13,24 @@
         facere ipsa esse quo harum officia molestiae similique, quasi at!
       </p>
     </section>
-
-    <nav class="header-nav">
-      <ul class="header-nav-list">
-        <li><a class="header-nav-link">Section 1</a></li>
-        <li><a class="header-nav-link">Section 2</a></li>
-        <li><a class="header-nav-link">Section 3</a></li>
-        <li><a class="header-nav-link">Section 4</a></li>
-        <li><a class="header-nav-link">Section 5</a></li>
-      </ul>
-    </nav>
   </main>
+  <Navbar />
 </template>
 
 <style scoped>
 /****************/
 /* HERO SECTION */
 /****************/
+#true {
+  -webkit-filter: blur(10px); /* Safari 6.0 - 9.0 */
+  filter: blur(10px);
+}
+
+#false {
+  -webkit-filter: none;
+  filter: none;
+}
+
 .hero {
   display: grid;
   justify-content: space-between;
@@ -35,36 +39,6 @@
     url(../assets/placeholder-hero.jpg);
   background-size: cover;
   height: 100vh;
-}
-
-/**************/
-/* NAVIGATION */
-/**************/
-
-.header-nav {
-  font-size: 1.8rem;
-  padding: 3.2rem 9.6rem;
-  background-color: #32773f;
-}
-
-.header-nav-list {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
-  gap: 2.4rem;
-
-  list-style: none;
-  cursor: pointer;
-}
-
-.header-nav-link:link,
-.header-nav-link:visited {
-  transition: color 0.5s;
-}
-
-.header-nav-link:hover,
-.header-nav-link:active {
-  color: #aaa;
+  transition: filter 0.5s;
 }
 </style>
