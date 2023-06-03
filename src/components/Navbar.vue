@@ -1,5 +1,5 @@
 <script setup>
-import { store } from '../store.js';
+import { store } from "../store.js";
 </script>
 
 <template>
@@ -30,11 +30,12 @@ import { store } from '../store.js';
   backdrop-filter: blur(0px);
 }
 
-.open-nav, .sidenav {
+.open-nav,
+.sidenav {
   position: fixed;
   z-index: 1;
   top: 0;
-  right: 0; 
+  right: 0;
 }
 
 .open-nav {
@@ -83,14 +84,18 @@ import { store } from '../store.js';
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
-  transition: margin-left .5s;
+  transition: margin-left 0.5s;
   padding: 20px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
 }
 
 /**************/

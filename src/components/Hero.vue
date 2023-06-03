@@ -15,8 +15,7 @@ import Navbar from "./Navbar.vue";
     </section>
   </main>
 
-
-  <!-- <div class="wave"></div> -->
+  <div class="wave"></div>
 </template>
 
 <style scoped>
@@ -35,8 +34,6 @@ import Navbar from "./Navbar.vue";
     url(../assets/placeholder-hero.jpg);
   background-size: cover;
   height: 100vh;
-
-  margin-bottom: 9.6rem;
 }
 
 /********/
@@ -75,23 +72,23 @@ import Navbar from "./Navbar.vue";
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 10rem;
+  width: 46.1%;
+  height: 100vh;
   background-image: url(../assets/wave.png);
-  background-size: 100rem 10rem;
+  background-size: 10rem 100rem;
+  /* background-size: cover; */
 
-  animation: animate 15s linear infinite;
-  z-index: 1000;
+  animation: animate 3s linear infinite reverse;
+  z-index: 0;
   opacity: 1;
   animation-delay: 0s;
-  bottom: 0;
 }
 @keyframes animate {
   0% {
-    background-position-x: 0;
+    background-position-y: 0;
   }
   100% {
-    background-position-x: 100rem;
+    background-position-y: 100rem;
   }
 }
 

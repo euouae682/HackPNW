@@ -36,7 +36,7 @@
   justify-items: center;
   align-items: center;
   row-gap: 4.8rem;
-  margin-bottom: 9.6rem;
+  margin: 9.6rem 0;
 }
 
 .about-box {
