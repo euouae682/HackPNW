@@ -4,7 +4,7 @@ import { store } from "../store.js";
 
 <template>
   <div class="open-nav">
-    <i @click="store.toggleNav" class="material-icons">menu</i>
+    <i @click="store.toggleNav" class="material-icons" style="font-size: 48px">menu</i>
   </div>
   <div :id=store.showNav class="sidenav">
     <a href="javascript:void(0)" class="closebtn" @click="store.toggleNav">&times;</a>
@@ -40,8 +40,8 @@ import { store } from "../store.js";
 
 .open-nav {
   margin-right: 30px; 
+  padding-top: 30px;
   color: gray;
-  font-size: 48px;
   cursor: pointer;
 }
 
