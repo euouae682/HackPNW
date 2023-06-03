@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div class="cta">
+  <div class="cta fade-in">
     <img src="../assets/placeholder-hero.jpg" class="cta-img" />
 
     <div class="cta-box">
