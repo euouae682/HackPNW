@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <section class="about">
+  <section class="about fade-in">
     <div class="about-box">
       <div class="about-heading">
         <svg
