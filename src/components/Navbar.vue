@@ -5,10 +5,10 @@ import { store } from '../store.js';
 <template>
   <div :id=store.showNav class="sidenav">
   <a href="javascript:void(0)" class="closebtn" @click="store.toggleNav">&times;</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
+  <router-link to="/">Home</router-link>
+  <router-link to="/education">Education</router-link>
+  <router-link to="/users">Users</router-link>
+  <router-link to="/map">Map</router-link>
 </div>
 
 <!-- Use any element to open the sidenav -->

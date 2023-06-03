@@ -7,9 +7,7 @@ import { store } from '../store.js'
     <section class="hero-text">
       <p class="">Earth Guardian</p>
       <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae ipsam
-        saepe eius possimus debitis, eligendi soluta a vitae neque corrupti
-        facere ipsa esse quo harum officia molestiae similique, quasi at!
+        idk theres some stuff here lol
       </p>
     </section>
   </main>
