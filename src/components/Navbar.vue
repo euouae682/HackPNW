@@ -1,18 +1,20 @@
 <script setup>
-import { store } from '../store.js';
+import { store } from "../store.js";
 </script>
 
 <template>
-  <div :id=store.showNav class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" @click="store.toggleNav">&times;</a>
-  <router-link to="/">Home</router-link>
-  <router-link to="/education">Education</router-link>
-  <router-link to="/users">Users</router-link>
-  <router-link to="/map">Map</router-link>
-</div>
+  <div :id="store.showNav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" @click="store.toggleNav"
+      >&times;</a
+    >
+    <router-link to="/">Home</router-link>
+    <router-link to="/education">Education</router-link>
+    <router-link to="/users">Users</router-link>
+    <router-link to="/map">Map</router-link>
+  </div>
 
-<!-- Use any element to open the sidenav -->
-<button class="open-nav" @click="store.toggleNav">open</button>
+  <!-- Use any element to open the sidenav -->
+  <button class="open-nav" @click="store.toggleNav">open</button>
 </template>
 
 <style scoped>
@@ -30,11 +32,12 @@ import { store } from '../store.js';
   backdrop-filter: blur(0px);
 }
 
-.open-nav, .sidenav {
+.open-nav,
+.sidenav {
   position: fixed;
   z-index: 1;
   top: 0;
-  right: 0; 
+  right: 0;
 }
 
 .sidenav {
@@ -76,14 +79,18 @@ import { store } from '../store.js';
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
-  transition: margin-left .5s;
+  transition: margin-left 0.5s;
   padding: 20px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
 }
 
 /**************/
