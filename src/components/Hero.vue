@@ -6,11 +6,10 @@ import Navbar from "./Navbar.vue";
 <template>
   <main class="hero" :id="store.showNav">
     <section class="hero-text">
-      <h1 class="hero-name">Eco Tribes</h1>
+      <h1 class="hero-name">EcoTribes</h1>
       <p class="hero-description">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae ipsam
-        saepe eius possimus debitis, eligendi soluta a vitae neque corrupti
-        facere ipsa esse quo harum officia molestiae similique, quasi at!
+        A powerful web application designed specifically to empower Native
+        American communities in the United States.
       </p>
     </section>
   </main>
@@ -26,12 +25,7 @@ import Navbar from "./Navbar.vue";
   display: grid;
   grid-template-columns: 60rem 1fr 30rem;
 
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 1),
-      rgba(0, 0, 0, 0.4)
-    ),
-    url(../assets/placeholder-hero.jpg);
+  background-image: url(../assets/hero.png);
   background-size: cover;
   height: 100vh;
 }
@@ -42,7 +36,6 @@ import Navbar from "./Navbar.vue";
 .hero-text {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
 
   position: relative;
@@ -59,8 +52,8 @@ import Navbar from "./Navbar.vue";
 }
 
 .hero-description {
-  color: #fff;
-  font-size: 2.4rem;
+  color: #ebfbee;
+  font-size: 3rem;
   line-height: 1.6;
 }
 

@@ -1,7 +1,7 @@
 <script setup>
 import Hero from "./Hero.vue";
 import About from "./About.vue";
-import Navbar from './Navbar.vue';
+import Navbar from "./Navbar.vue";
 import Motto from "./Motto.vue";
 import CallToAction from "./CallToAction.vue";
 import { store } from '../store.js';
@@ -48,7 +48,7 @@ const isElemVisible = (el) => {
 </template>
 
 <style scoped>
-#true {  
+#true {
   -webkit-filter: blur(10px);
   filter: blur(10px);
 }
@@ -64,7 +64,7 @@ const isElemVisible = (el) => {
   }
 
 .home {
-    transition: filter 0.5s;
-    overflow: hidden;
+  transition: filter 0.5s;
+  overflow: hidden;
 }
 </style>
