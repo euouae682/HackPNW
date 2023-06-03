@@ -16,3 +16,12 @@ body {
   font-weight: 400;
   color: #212529;
 }
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

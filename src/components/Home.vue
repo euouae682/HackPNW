@@ -29,5 +29,6 @@ import { store } from '../store.js';
 
 .home {
     transition: filter 0.5s;
+    overflow: hidden;
 }
 </style>

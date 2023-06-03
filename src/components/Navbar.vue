@@ -3,16 +3,16 @@ import { store } from '../store.js';
 </script>
 
 <template>
+  <div class="open-nav">
+    <i @click="store.toggleNav" class="material-icons">menu</i>
+  </div>
   <div :id=store.showNav class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" @click="store.toggleNav">&times;</a>
-  <router-link to="/">Home</router-link>
-  <router-link to="/education">Education</router-link>
-  <router-link to="/users">Users</router-link>
-  <router-link to="/map">Map</router-link>
-</div>
-
-<!-- Use any element to open the sidenav -->
-<button class="open-nav" @click="store.toggleNav">open</button>
+    <a href="javascript:void(0)" class="closebtn" @click="store.toggleNav">&times;</a>
+    <router-link to="/">Home</router-link>
+    <router-link to="/education">Education</router-link>
+    <router-link to="/users">Users</router-link>
+    <router-link to="/map">Map</router-link>
+  </div>
 </template>
 
 <style scoped>
@@ -35,6 +35,13 @@ import { store } from '../store.js';
   z-index: 1;
   top: 0;
   right: 0; 
+}
+
+.open-nav {
+  margin-right: 30px; 
+  color: gray;
+  font-size: 48px;
+  cursor: pointer;
 }
 
 .sidenav {
