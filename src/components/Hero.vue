@@ -65,7 +65,7 @@ import Navbar from "./Navbar.vue";
   position: absolute;
   top: 0;
   left: 0;
-  width: 46.1%;
+  width: 45.55%;
   height: 100vh;
   background-image: url(../assets/wave.png);
   background-size: 10rem 100rem;
