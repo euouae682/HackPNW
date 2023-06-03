@@ -1,7 +1,8 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import Hero from './components/Hero.vue'
-import Navbar from './components/Navbar.vue'
+import { RouterLink, RouterView } from "vue-router";
+import Hero from "./components/Hero.vue";
+import About from "./components/About.vue";
+import Navbar from "./components/Navbar.vue";
 </script>
 
 <template>
@@ -9,5 +10,4 @@ import Navbar from './components/Navbar.vue'
   <Navbar />
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>
