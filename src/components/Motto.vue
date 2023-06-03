@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div class="motto">
+  <div class="motto fade-in">
     <h3 class="motto-text">Empowering native voices.</h3>
     <h3 class="motto-text">Preserving sacred lands.</h3>
   </div>

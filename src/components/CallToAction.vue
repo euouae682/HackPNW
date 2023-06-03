@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div class="cta">
+  <div class="cta fade-in">
     <p>TESTING</p>
   </div>
 </template>

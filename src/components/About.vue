@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <section class="about">
+  <section class="about fade-in">
     <div class="about-box">
       <h2 class="about-header">What is EcoTribe?</h2>
       <p class="about-text">
