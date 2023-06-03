@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Hero from '../components/Hero.vue'
+import Home from '../components/Home.vue'
 import Map from '../components/Map.vue'
 import Ping from '../components/Ping.vue'
 
@@ -9,7 +9,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: Hero
+      component: Home
     },
     {
       path: '/map',

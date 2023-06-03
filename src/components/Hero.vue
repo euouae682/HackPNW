@@ -16,23 +16,13 @@ import Navbar from "./Navbar.vue";
   </main>
 
 
-  <div class="wave"></div>
+  <!-- <div class="wave"></div> -->
 </template>
 
 <style scoped>
 /****************/
 /* HERO SECTION */
 /****************/
-#true {
-  -webkit-filter: blur(10px); /* Safari 6.0 - 9.0 */
-  filter: blur(10px);
-}
-
-#false {
-  -webkit-filter: none;
-  filter: none;
-}
-
 .hero {
   display: grid;
   grid-template-columns: 60rem 1fr 30rem;

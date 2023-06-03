@@ -22,10 +22,12 @@ import { store } from '../store.js';
 /* The side navigation menu */
 #true {
   width: 300px;
+  backdrop-filter: blur(10px);
 }
 
 #false {
   width: 0px;
+  backdrop-filter: blur(0px);
 }
 
 .open-nav, .sidenav {
