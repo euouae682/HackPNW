@@ -4,10 +4,14 @@ import { store } from "../store.js";
 
 <template>
   <div class="open-nav">
-    <i @click="store.toggleNav" class="material-icons" style="font-size: 48px">menu</i>
+    <i @click="store.toggleNav" class="material-icons" style="font-size: 48px"
+      >menu</i
+    >
   </div>
-  <div :id=store.showNav class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" @click="store.toggleNav">&times;</a>
+  <div :id="store.showNav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" @click="store.toggleNav"
+      >&times;</a
+    >
     <router-link to="/">Home</router-link>
     <router-link to="/education">Education</router-link>
     <router-link to="/users">Users</router-link>
@@ -39,9 +43,9 @@ import { store } from "../store.js";
 }
 
 .open-nav {
-  margin-right: 30px; 
+  margin-right: 30px;
   padding-top: 30px;
-  color: gray;
+  color: #32773f;
   cursor: pointer;
 }
 
@@ -52,7 +56,7 @@ import { store } from "../store.js";
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   right: 0;
-  background-color: #111; /* Black*/
+  background-color: #32773f; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -63,7 +67,7 @@ import { store } from "../store.js";
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #fff;
   display: block;
   transition: 0.3s;
 }
