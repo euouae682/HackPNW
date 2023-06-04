@@ -1,5 +1,4 @@
-<script setup>
-</script>
+<script setup></script>
 
 <template>
   <div class="blog">
@@ -58,5 +57,13 @@
   background-color: #fff;
   border: 3px solid #212529;
   cursor: pointer;
+
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: #32773f;
+  color: #fff;
+  border: 3px solid #fff;
 }
 </style>
