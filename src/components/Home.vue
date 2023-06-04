@@ -1,10 +1,10 @@
 <script setup>
-import Hero from "./Hero.vue";
-import About from "./About.vue";
+import Hero from "./home/Hero.vue";
+import About from "./home/About.vue";
+import Motto from "./home/Motto.vue";
+import Statistics from "./home/Statistics.vue";
+import CallToAction from "./home/CallToAction.vue";
 import Navbar from "./Navbar.vue";
-import Motto from "./Motto.vue";
-import Statistics from "./Statistics.vue";
-import CallToAction from "./CallToAction.vue";
 import { store } from "../store.js";
 import { onMounted, onUnmounted } from "vue";
 

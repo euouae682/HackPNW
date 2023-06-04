@@ -1,8 +1,8 @@
 <script setup>
 import { store } from "../store.js";
 import { onMounted, onUnmounted } from "vue";
-import EducationHero from "./EducationHero.vue";
-import EduElement from "./EduElement.vue";
+import EducationHero from "./education/EducationHero.vue";
+import EduElement from "./education/EduElement.vue";
 
 var fadeInElements = [];
 

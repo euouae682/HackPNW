@@ -2,7 +2,7 @@
 
 <template>
   <div class="cta fade-in">
-    <img src="../assets/home/cta.png" class="cta-img" />
+    <img src="../../assets/home/cta.png" class="cta-img" />
 
     <div class="cta-box">
       <h2 class="cta-header">The Planet is Changing</h2>

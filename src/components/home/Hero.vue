@@ -1,6 +1,6 @@
 <script setup>
-import { store } from "../store.js";
-import Navbar from "./Navbar.vue";
+import { store } from "../../store.js";
+import Navbar from "../Navbar.vue";
 </script>
 
 <template>
@@ -22,7 +22,7 @@ import Navbar from "./Navbar.vue";
 /* HERO SECTION */
 /****************/
 .hero {
-  background-image: url(../assets/home/hero.png);
+  background-image: url(../../assets/home/hero.png);
   background-size: cover;
   height: 100vh;
 }
@@ -63,7 +63,7 @@ import Navbar from "./Navbar.vue";
 
 .wave {
   height: 100vh;
-  background-image: url(../assets/home/wave.png);
+  background-image: url(../../assets/home/wave.png);
   background-size: contain;
   /* background-repeat: no-repeat; */
 

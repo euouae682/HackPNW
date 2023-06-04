@@ -31,9 +31,9 @@
         awareness about these issues effectively.
       </p>
     </div>
-    <img src="../assets/home/about-what.png" alt="" class="about-img" />
+    <img src="../../assets/home/about-what.png" alt="" class="about-img" />
 
-    <img src="../assets/home/about-how.png" alt="" class="about-img" />
+    <img src="../../assets/home/about-how.png" alt="" class="about-img" />
     <div class="about-box">
       <div class="about-heading">
         <svg

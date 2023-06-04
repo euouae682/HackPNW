@@ -10,7 +10,7 @@
 <style scoped>
 .motto {
   min-height: 100vh;
-  background-image: url(../assets/home/motto.png);
+  background-image: url(../../assets/home/motto.png);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
