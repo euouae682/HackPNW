@@ -4,69 +4,88 @@ import { store } from "../store.js";
 defineProps({
   title: {
     type: String,
-    required: true
+    required: true,
   },
   desc: {
     type: String,
-    required: true
+    required: true,
   },
   bg: {
     type: String,
-    required: true
+    required: true,
   },
+  hcol: {
+    type: String,
+    required: true,
+  },
+
   tcol: {
     type: String,
-    required: true
+    required: true,
   },
   align: {
     type: String,
-    required: true
+    required: true,
   },
   imgUrl: {
     type: String,
-    required: true
+    required: true,
   },
-})
+});
 </script>
 
 <template>
-  <main class="edu-element" :id="store.showNav" :style="'background-color: ' + bg">
-    <img v-if="align == 'right'" :src="'src/assets/' + imgUrl" width="900" height="900" />
+  <main
+    class="edu-element"
+    :id="store.showNav"
+    :style="'background-color: ' + bg"
+  >
+    <img v-if="align == 'right'" :src="'src/assets/' + imgUrl" />
+
     <section class="text">
-      <h1 class="title" :style="'color: ' + tcol">{{ title }}</h1>
+      <h1 class="title" :style="'color: ' + hcol">{{ title }}</h1>
       <p class="description" :style="'color: ' + tcol">{{ desc }}</p>
     </section>
-    <img v-if="align == 'left'" :src="'src/assets/' + imgUrl" width="900" height="900" />
+
+    <img v-if="align == 'left'" :src="'src/assets/' + imgUrl" />
   </main>
 </template>
 
 <style scoped>
+/*************/
+/* CONTAINER */
+/*************/
 .edu-element {
   display: flex;
-  height: 100vh;
   background-color: #32773f;
+  height: 100vh;
+  padding: 4.8rem 3.2rem;
 }
 
+/********/
+/* TEXT */
+/********/
 .text {
-    width: 50%;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  margin: 0 6.4rem;
 }
 .title {
-  color: white;
-  font-size: 7rem;
-  margin: 12rem 12rem 8rem 12rem;
-  letter-spacing: -0.5px;
+  font-size: 5.2rem;
+  letter-spacing: -0.3px;
 }
 
 .description {
-  color: #ebfbee;
-  font-size: 2.5rem;
-  margin: 0rem 12rem 0rem 12rem;
-  line-height: 1.6;
+  font-size: 1.8rem;
+  line-height: 1.3;
 }
 
+/*********/
+/* IMAGE */
+/*********/
 img {
-    border-radius: 25px;
-    margin: auto;
+  border-radius: 25px;
+  width: 70rem;
 }
 </style>
