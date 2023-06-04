@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div class="stats">
+  <div class="stats fade-in">
     <h2 class="stats-header">What's happening to indigenous land?</h2>
 
     <div class="stats-box">
