@@ -5,8 +5,7 @@ import { store } from "../store.js";
 <template>
   <div class="open-nav">
     <i @click="store.toggleNav" class="material-icons" style="font-size: 48px"
-      >menu</i
-    >
+      >menu</i>
   </div>
   <div :id="store.showNav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" @click="store.toggleNav"
@@ -45,6 +44,12 @@ import { store } from "../store.js";
   padding-top: 30px;
   color: #32773f;
   cursor: pointer;
+}
+
+i {
+  background-color: white;
+  padding: 3px;
+  border-radius: 15px;
 }
 
 .sidenav {
