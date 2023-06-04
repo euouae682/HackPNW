@@ -2,7 +2,7 @@
 
 <template>
   <div class="cta fade-in">
-    <img src="../assets/placeholder-hero.jpg" class="cta-img" />
+    <img src="../assets/home/cta.png" class="cta-img" />
 
     <div class="cta-box">
       <h2 class="cta-header">The Planet is Changing</h2>
@@ -24,19 +24,27 @@
 </template>
 
 <style scoped>
+/**************************/
+/* CALL-TO-ACTION SECTION */
+/**************************/
 .cta {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   justify-items: center;
-  align-items: start;
-  margin: 9.6rem 0;
+  align-items: center;
+  margin: 9.6rem;
 }
 
+/**********/
+/* IMAGE */
+/**********/
 .cta-img {
-  width: 80%;
+  height: 60rem;
   border-radius: 1.2rem;
 }
 
+/********/
+/* TEXT */
+/********/
 .cta-box {
   display: flex;
   flex-direction: column;
@@ -56,15 +64,13 @@
   gap: 2.4rem;
   padding: 0 6.4rem;
   margin-bottom: 2.4rem;
+
+  font-size: 2.4rem;
+  text-align: center;
 }
 
 .cta-goal {
-  font-size: 2.4rem;
   color: #78c286;
-}
-
-.cta-description {
-  font-size: 2.4rem;
 }
 
 .cta-btn:any-link {

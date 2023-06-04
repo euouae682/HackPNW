@@ -5,16 +5,18 @@ import Navbar from "./Navbar.vue";
 
 <template>
   <main class="hero" :id="store.showNav">
-    <section class="hero-text">
-      <h1 class="hero-name">EcoTribes</h1>
-      <p class="hero-description">
-        A powerful web application designed specifically to empower Native
-        American communities in the United States.
-      </p>
-    </section>
+    <div class="wave">
+      <section class="hero-text">
+        <h1 class="hero-name">EcoTribes</h1>
+        <p class="hero-description">
+          A powerful web application designed specifically to empower Native
+          American communities in the United States.
+        </p>
+      </section>
+    </div>
   </main>
 
-  <div class="wave"></div>
+  <!-- <div class="wave"></div> -->
 </template>
 
 <style scoped>
@@ -22,9 +24,6 @@ import Navbar from "./Navbar.vue";
 /* HERO SECTION */
 /****************/
 .hero {
-  display: grid;
-  grid-template-columns: 60rem 1fr 30rem;
-
   background-image: url(../assets/hero.png);
   background-size: cover;
   height: 100vh;
@@ -41,20 +40,23 @@ import Navbar from "./Navbar.vue";
   position: relative;
   z-index: 1;
 
-  background-color: #32773f;
+  /* background-color: #32773f; */
+  width: 65rem;
+  height: 100%;
   gap: 4.8rem;
-  padding: 3.2rem;
 }
 .hero-name {
   color: #78c286;
   font-size: 9.8rem;
   letter-spacing: -0.5px;
+  padding-left: 6.4rem;
 }
 
 .hero-description {
   color: #ebfbee;
   font-size: 3rem;
   line-height: 1.6;
+  padding-left: 6.4rem;
 }
 
 /********/
@@ -62,14 +64,10 @@ import Navbar from "./Navbar.vue";
 /********/
 
 .wave {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 45.55%;
   height: 100vh;
   background-image: url(../assets/wave.png);
-  background-size: 10rem 100rem;
-  /* background-size: cover; */
+  background-size: contain;
+  /* background-repeat: no-repeat; */
 
   animation: animate 3s linear infinite reverse;
   z-index: 0;
@@ -81,64 +79,7 @@ import Navbar from "./Navbar.vue";
     background-position-y: 0;
   }
   100% {
-    background-position-y: 100rem;
+    background-position-y: 100vh;
   }
 }
-
-/* .hero-spinner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(-40%, 0);
-  z-index: 0;
-  height: 100%;
-  overflow: hidden;
-
-  animation-name: ckw;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  transform-origin: 50% 50%;
-  display: inline-block;
-}
-@keyframes ckw {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-} */
-
-/**************/
-/* NAVIGATION */
-/**************/
-
-/* .header-nav {
-  font-size: 1.8rem;
-  padding: 3.2rem 9.6rem;
-  background-color: #32773f;
-
-  grid-column: 3 / -1;
-}
-
-.header-nav-list {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
-  gap: 2.4rem;
-
-  list-style: none;
-  cursor: pointer;
-}
-
-.header-nav-link:link,
-.header-nav-link:visited {
-  transition: color 0.5s;
-}
-
-.header-nav-link:hover,
-.header-nav-link:active {
-  color: #aaa;
-} */
 </style>

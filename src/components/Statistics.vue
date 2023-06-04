@@ -2,14 +2,12 @@
 
 <template>
   <div class="stats">
-    <h2>What's happening to our planet?</h2>
+    <h2 class="stats-header">What's happening to indigenous land?</h2>
 
     <div class="stats-box">
-      <div class="stats-1">
+      <div class="stats-info">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="32"
-          height="32"
           fill="#fff"
           viewBox="0 0 256 256"
           class="stats-icon"
@@ -24,11 +22,9 @@
         </p>
       </div>
 
-      <div class="stats-2">
+      <div class="stats-info">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="32"
-          height="32"
           fill="#fff"
           viewBox="0 0 256 256"
           class="stats-icon"
@@ -43,11 +39,9 @@
         </p>
       </div>
 
-      <div class="stats-3">
+      <div class="stats-info">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="32"
-          height="32"
           fill="#fff"
           viewBox="0 0 256 256"
           class="stats-icon"
@@ -67,8 +61,45 @@
 </template>
 
 <style scoped>
+/**********************/
+/* STATISTICS SECTION */
+/**********************/
 .stats {
-  padding: 9.6rem 0;
+  padding: 9.6rem;
   background-color: #32773f;
+}
+
+/***********/
+/* HEADING */
+/***********/
+.stats-header {
+  color: #fff;
+  font-size: 3.6rem;
+  margin-bottom: 6.4rem;
+}
+
+/**************/
+/* STATISTICS */
+/**************/
+.stats-box {
+  display: flex;
+  gap: 4.8rem;
+}
+
+.stats-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 0px;
+  gap: 2.4rem;
+}
+
+.stats-info p {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.stats-icon {
+  width: 6.4rem;
 }
 </style>
