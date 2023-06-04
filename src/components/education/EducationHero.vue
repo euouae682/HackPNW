@@ -109,12 +109,21 @@ import Navbar from "../Navbar.vue";
   position: absolute;
   bottom: 15%;
   margin: 25px;
-  font-size: 40px;
   font-weight: bold;
 }
 
 #true.flex-item {
   width: 50%;
+}
+
+/* #true > p {
+  animation-name: fade-in-out;
+  animation-duration: 1s;
+} */
+
+@keyframes fade-in-out {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 #false > p {
@@ -124,7 +133,8 @@ import Navbar from "../Navbar.vue";
   padding: 16px;
   writing-mode: vertical-lr;
   text-orientation: sideways;
-  transition: all 0.5s;
+  animation-name: fade-in-out;
+  animation-duration: 1s;
   line-height: 86%;
   letter-spacing: 8px;
   overflow: none;
