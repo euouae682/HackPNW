@@ -10,7 +10,7 @@ defineProps({
     type: String,
     required: true,
   },
-  topics: {
+  topic: {
     type: String,
     required: true,
   },
@@ -37,9 +37,9 @@ defineProps({
     <p class="blog-article">{{ article }}</p>
 
     <footer class="blog-footer">
-      <span class="blog-footer-topic">Native Living</span>
-      <span class="blog-footer-date">May 14, 2023</span>
-      <span class="blog-footer-time">15 min</span>
+      <span class="blog-footer-topic">{{  topic  }}</span>
+      <span class="blog-footer-date">{{  date }}</span>
+      <span class="blog-footer-time">{{  time }}</span>
     </footer>
   </section>
 </template>

@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+import { store } from '../../store.js';
+</script>
 
 <template>
   <div class="blog">
@@ -6,10 +8,10 @@
 
     <div class="topics">
       <span class="topics-label">Topics:</span>
-      <button class="btn">Native Living</button>
-      <button class="btn">Climate Change</button>
-      <button class="btn">Adaptation</button>
-      <button class="btn">Leadership and Advocacy</button>
+      <button @click="store.filterPosts('Native living')" class="btn">Native Living</button>
+      <button @click="store.filterPosts('Climate change')" class="btn">Climate Change</button>
+      <button @click="store.filterPosts('Adaptation')" class="btn">Adaptation</button>
+      <button @click="store.filterPosts('Leadership and advocacy')" class="btn">Leadership and Advocacy</button>
     </div>
   </div>
 </template>
