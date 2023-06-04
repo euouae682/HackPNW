@@ -4,10 +4,6 @@ import BlogPost from './blog/BlogPost.vue';
 import { ref } from 'vue';
 import { store } from '../store.js';
 
-const posts = ref([{ 
-  
-}])
-
 </script>
 
 <template>
