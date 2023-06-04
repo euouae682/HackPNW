@@ -72,11 +72,10 @@ import Navbar from "./Navbar.vue";
 
 .flex-container {
     display: flex;
-    position: absolute;
-    width: 60%;
+    width: 100%;
     height: 80%;
-    bottom: 8%;
-    right: 5%;
+    margin: auto;
+    padding-left: 5%;
 }
 
 .flex-item {
