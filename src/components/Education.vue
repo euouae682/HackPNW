@@ -42,10 +42,8 @@ const isElemVisible = (el) => {
       id="traditions"
       title="Native American Traditions"
       desc="Native American traditions encompass a rich tapestry of cultural practices that have been passed down through generations. Rooted in deep reverence for the land, these traditions emphasize a harmonious relationship between humans and nature. 
-
-    Native American communities have an intricate understanding of their surroundings, recognizing the interconnectedness of all living beings. Traditional ceremonies, such as powwows, sweat lodges, and vision quests, play a vital role in spiritual expression and community bonding. The oral tradition, storytelling, remains a fundamental aspect, preserving ancestral knowledge, history, and cultural values. Native American arts and crafts, such as intricate beadwork, pottery, and intricate carvings, not only showcase remarkable craftsmanship but also reflect profound connections to nature and ancestral heritage.
-
-    Respect for elders, communal decision-making, and a profound sense of interconnectedness shape the social fabric of these communities. Native American traditions are a testament to the enduring spirit and resilience of Indigenous cultures, serving as a wellspring of wisdom and inspiration for all who seek to understand and honor their heritage.
+      Native American communities have an intricate understanding of their surroundings, recognizing the interconnectedness of all living beings. Traditional ceremonies, such as powwows, sweat lodges, and vision quests, play a vital role in spiritual expression and community bonding. The oral tradition, storytelling, remains a fundamental aspect, preserving ancestral knowledge, history, and cultural values. Native American arts and crafts, such as intricate beadwork, pottery, and intricate carvings, not only showcase remarkable craftsmanship but also reflect profound connections to nature and ancestral heritage.
+      Respect for elders, communal decision-making, and a profound sense of interconnectedness shape the social fabric of these communities. Native American traditions are a testament to the enduring spirit and resilience of Indigenous cultures, serving as a wellspring of wisdom and inspiration for all who seek to understand and honor their heritage.
 "
       bg="#32773f"
       hcol="#0f2413"

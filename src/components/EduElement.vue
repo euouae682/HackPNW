@@ -6,7 +6,7 @@ defineProps({
     type: String,
     required: true
   },
-  desc: {
+  descs: {
     type: String,
     required: true
   },
@@ -63,6 +63,7 @@ defineProps({
   font-size: 2rem;
   margin: 0rem 6rem 0rem 6rem;
   line-height: 1.6;
+  white-space: pre-line;
 }
 
 img {
