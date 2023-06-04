@@ -26,12 +26,10 @@ import { store } from "../store.js";
 /* The side navigation menu */
 #true {
   width: 40rem;
-  backdrop-filter: blur(10px);
 }
 
 #false {
   width: 0px;
-  backdrop-filter: blur(0px);
 }
 
 .open-nav,
@@ -50,16 +48,16 @@ import { store } from "../store.js";
 }
 
 .sidenav {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
   right: 0;
-  background-color: #32773f; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  background-color: #32773f;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
   text-align: center;
 }
 

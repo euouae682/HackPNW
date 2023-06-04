@@ -99,7 +99,7 @@ import Navbar from "./Navbar.vue";
     font-weight: bold;
 }
 
-#true {
+#true.flex-item {
     width: 50%;
 }
 
