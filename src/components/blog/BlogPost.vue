@@ -10,6 +10,14 @@ defineProps({
     type: String,
     required: true,
   },
+  fulltxt1: {
+    type: String,
+    required: false,
+  },
+  fulltxt2: {
+    type: String,
+    required: false,
+  },
   topic: {
     type: String,
     required: true,
@@ -20,6 +28,10 @@ defineProps({
   },
   time: {
     type: String,
+    required: true,
+  },
+  inset: {
+    type: Boolean,
     required: true,
   },
   imgUrl: {
@@ -41,6 +53,13 @@ defineProps({
       <span class="blog-footer-date">{{  date }}</span>
       <span class="blog-footer-time">{{  time }}</span>
     </footer>
+    <div class=inset v-if="inset">
+      <h1 class="blog-title">{{  title  }}</h1>
+      <p class="blog-article">
+        {{  fulltxt1 }}
+        {{  fulltxt2 }}
+      </p>
+    </div>
   </section>
 </template>
 
@@ -66,6 +85,15 @@ defineProps({
   color: #fff;
   border: 3px solid #fff;
 }
+
+.inset {
+  position: fixed;
+  margin: auto;
+  width: 50vh;
+  height: 50vh;
+  background-color: black;
+}
+
 .blog-post:hover > footer {
   border-top: 3px solid #fff;
 }

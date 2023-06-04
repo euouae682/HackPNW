@@ -10,12 +10,13 @@ store.filterPosts('');
 <template>
   <BlogHeader />
   <section class="blog-container">
-    <BlogPost v-for="post in store.filteredPosts"
+    <BlogPost v-for="post in store.filteredPosts" @click="store.toggleDetail(post)"
       :title="post.title"
       :article="post.article"
       :topic="post.topic"
       :date="post.date"
       :time="post.time"
+      :inset="post.inset"
       :imgUrl="post.imgUrl"
     />
   </section>
