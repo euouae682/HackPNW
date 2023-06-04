@@ -38,15 +38,20 @@ const isElemVisible = (el) => {
 
 <template>
   <EducationHero />
-  <EducationThumbnail />
   <main class="education" :id="store.showNav">
     <aside>
-      <EducationThumbnail />
-      <EducationThumbnail />
+      <EducationThumbnail
+        v-for="post in store.thumbnails"
+        :title="post.title"
+        :description="post.description"
+        :imgUrl="post.imgUrl"
+        class="thumbnail"
+      />
+
+      <p class="more">more to come later!</p>
     </aside>
-    <article>
-      <EducationMain />
-    </article>
+
+    <EducationMain />
   </main>
 </template>
 
@@ -66,11 +71,37 @@ const isElemVisible = (el) => {
   transition: 0.5s opacity ease-out;
 }
 
+/**********/
+/* LAYOUT */
+/**********/
+
 .education {
   background-color: #cbe1cf;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1.4fr 2fr;
+  gap: 2.4rem;
+  padding: 4.8rem;
+  height: 100vh;
 
   transition: filter 0.5s;
-  overflow: hidden;
+  /* overflow: scroll; */
+}
+
+aside .thumbnail:first-child {
+  background-color: #32773f;
+  color: #fff;
+}
+
+/********/
+/* MORE */
+/********/
+
+.more {
+  background-color: #728b77;
+  padding: 1.2rem 0;
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 2rem;
 }
 </style>

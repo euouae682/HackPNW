@@ -18,7 +18,7 @@
           United States.
         </p>
       </div>
-      <a href="#" class="cta-btn">Try today</a>
+      <a href="map" class="cta-btn">Try today</a>
     </div>
   </div>
 </template>

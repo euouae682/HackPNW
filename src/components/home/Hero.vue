@@ -77,7 +77,7 @@ import Navbar from "../Navbar.vue";
     background-position-y: 0;
   }
   100% {
-    background-position-y: 100vh;
+    background-position-y: 83vh;
   }
 }
 </style>
