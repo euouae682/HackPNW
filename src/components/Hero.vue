@@ -15,8 +15,6 @@ import Navbar from "./Navbar.vue";
       </section>
     </div>
   </main>
-
-  <!-- <div class="wave"></div> -->
 </template>
 
 <style scoped>
@@ -24,7 +22,7 @@ import Navbar from "./Navbar.vue";
 /* HERO SECTION */
 /****************/
 .hero {
-  background-image: url(../assets/hero.png);
+  background-image: url(../assets/home/hero.png);
   background-size: cover;
   height: 100vh;
 }
@@ -65,7 +63,7 @@ import Navbar from "./Navbar.vue";
 
 .wave {
   height: 100vh;
-  background-image: url(../assets/wave.png);
+  background-image: url(../assets/home/wave.png);
   background-size: contain;
   /* background-repeat: no-repeat; */
 

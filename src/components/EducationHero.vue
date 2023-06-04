@@ -131,19 +131,19 @@ import Navbar from "./Navbar.vue";
 }
 
 .traditions {
-  background: url(../assets/traditions.png);
+  background: url(../assets/education/traditions.png);
   background-position: center;
   background-size: cover;
 }
 
 .women {
-  background: url(../assets/nawomen.png);
+  background: url(../assets/education/nawomen.png);
   background-position: center;
   background-size: cover;
 }
 
 .warming {
-  background: url(../assets/globalwarming.png);
+  background: url(../assets/education/globalwarming.png);
   background-position: center;
   background-size: cover;
 }

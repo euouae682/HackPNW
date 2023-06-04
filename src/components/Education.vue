@@ -51,7 +51,7 @@ const isElemVisible = (el) => {
       hcol="#0f2413"
       tcol="#fff"
       align="right"
-      imgUrl="traditions.png"
+      imgUrl="education/traditions.png"
     />
 
     <EduElement
@@ -67,7 +67,7 @@ Their presence is cherished, and their wisdom is sought after to ensure the cont
       hcol="#32773f"
       tcol="#000"
       align="left"
-      imgUrl="nawomen.png"
+      imgUrl="education/nawomen.png"
     />
 
     <EduElement
@@ -83,7 +83,7 @@ Furthermore, the impacts of global warming exacerbate pre-existing socio-economi
       hcol="#0f2413"
       tcol="#fff"
       align="right"
-      imgUrl="globalwarming.png"
+      imgUrl="education/globalwarming.png"
     />
   </main>
 </template>
