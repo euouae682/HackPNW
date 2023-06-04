@@ -14,7 +14,7 @@ import { store } from "../store.js";
     >
     <router-link to="/">Home</router-link>
     <router-link to="/education">Education</router-link>
-    <router-link to="/users">Blog</router-link>
+    <router-link to="/blog">Blog</router-link>
     <router-link to="/map">Map</router-link>
   </div>
 </template>
