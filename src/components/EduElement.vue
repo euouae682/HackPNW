@@ -31,12 +31,12 @@ defineProps({
 
 <template>
   <main class="edu-element" :id="store.showNav" :style="'background-color: ' + bg">
-    <img v-if="align == 'right'" :src="'src/assets/' + imgUrl" width="900" height="900" />
+    <img v-if="align == 'right'" :src="'src/assets/' + imgUrl" width="700" height="700" />
     <section class="text">
       <h1 class="title" :style="'color: ' + tcol">{{ title }}</h1>
       <p class="description" :style="'color: ' + tcol">{{ desc }}</p>
     </section>
-    <img v-if="align == 'left'" :src="'src/assets/' + imgUrl" width="900" height="900" />
+    <img v-if="align == 'left'" :src="'src/assets/' + imgUrl" width="700" height="700" />
   </main>
 </template>
 
@@ -53,15 +53,15 @@ defineProps({
 }
 .title {
   color: white;
-  font-size: 7rem;
-  margin: 12rem 12rem 8rem 12rem;
+  font-size: 5rem;
+  margin: 6rem 6rem 3rem 6rem;
   letter-spacing: -0.5px;
 }
 
 .description {
   color: #ebfbee;
-  font-size: 2.5rem;
-  margin: 0rem 12rem 0rem 12rem;
+  font-size: 2rem;
+  margin: 0rem 6rem 0rem 6rem;
   line-height: 1.6;
 }
 
