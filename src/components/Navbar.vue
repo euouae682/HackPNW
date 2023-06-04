@@ -14,7 +14,7 @@ import { store } from "../store.js";
     >
     <router-link to="/">Home</router-link>
     <router-link to="/education">Education</router-link>
-    <router-link to="/users">Users</router-link>
+    <router-link to="/users">Blog</router-link>
     <router-link to="/map">Map</router-link>
   </div>
 </template>
@@ -25,7 +25,7 @@ import { store } from "../store.js";
 /****************/
 /* The side navigation menu */
 #true {
-  width: 300px;
+  width: 40rem;
   backdrop-filter: blur(10px);
 }
 
@@ -60,21 +60,23 @@ import { store } from "../store.js";
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  text-align: center;
 }
 
 /* The navigation menu links */
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 4rem;
   color: #fff;
   display: block;
   transition: 0.3s;
+  padding: 4rem;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #cecece;
 }
 
 /* Position and style the close button (top right corner) */
